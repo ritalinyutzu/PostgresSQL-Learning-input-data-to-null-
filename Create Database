@@ -1,0 +1,29 @@
+create table df1 (
+      rank integer
+    , gamename text
+    , gametype text
+    , publishtime text
+    , news integer
+    , voice integer
+);
+
+create table df2 (
+      rank integer
+    , gamename text
+    , gametype text
+    , publishtime text
+    , news integer
+    , voice integer
+);
+
+insert into df1 (rank,gamename,gametype,publishtime,news,voice) values
+(1,'哈利波特','卡牌戰鬥','2021-09-09',9,1424),
+(2,'烈火戰記','卡牌戰鬥','2021-07-14',1,668),
+(3,'幻書啟世錄',null,'2021-07-29',1,320),
+(4,null,'角色扮演','2021-06-08',16,270),
+(5,'Re：從零開始的異世界生活 Lost in Memories','角色扮演','2021-07-15',30,222),
+(6,'天地劫','角色扮演','2021-08-11',38,129),
+(7,'彈射世界','動作與射擊','2021-05-26',null,126),
+(8,'戰火勛章','策略塔防','2021-09-15',4,null),
+(9,'ETERNAL：永恆聖約','角色扮演','2021-04-14',21,68),
+(10,'MARVEL 未來革命','角色扮演','2021-08-25',10,67);
