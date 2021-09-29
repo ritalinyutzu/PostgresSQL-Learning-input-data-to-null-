@@ -1,0 +1,36 @@
+-- df1 有資料但存在null值
+select *
+from df1
+
+-- df2 為空白表格
+select *
+from df2
+
+
+-- 利用df1資料內容 insert 到完全空白的df2
+insert into df2
+select * 
+  from df1 
+where 1=1
+  and (1 = 1
+  or df1.gametype = '卡牌戰鬥'
+  or df1.gametype = '角色扮演'
+   );
+  select *
+    from df2
+    
+ -- df1 剩下無法串接的null值 要用人工方式去輸入
+update df1 set gametype = '角色扮演'
+  where 1=1
+    and gamename = '幻書啟世錄';
+update df1 set gamename = '二之國：交錯世界'
+  where 1=1
+    and rank = 4;
+update df1 set news = 43
+  where 1=1
+    and rank = 7;
+update df1 set voice = 98
+  where 1=1
+    and rank = 8;
+ select *
+ from df1
